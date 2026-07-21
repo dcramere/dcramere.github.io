@@ -1,0 +1,135 @@
+.gate-teaser {
+  padding: 10px 24px 30px;
+}
+
+.teaser-grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.teaser-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 22px 20px;
+  text-align: center;
+  width: 220px;
+}
+
+.teaser-card img {
+  width: 32px;
+  height: 32px;
+  margin-bottom: 12px;
+  object-fit: contain;
+}
+
+.teaser-card h4 {
+  color: var(--gold);
+  font-size: 14px;
+  letter-spacing: 0.06em;
+  margin: 0 0 8px;
+}
+
+.teaser-card p {
+  color: var(--text-dim);
+  font-size: 13px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.gate {
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 40px 24px 60px;
+  text-align: center;
+}
+
+.gate-sub {
+  color: var(--text-dim);
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 0 0 28px;
+}
+
+.gate-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.gate-form input {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 14px 16px;
+  color: var(--text);
+  font-family: "Overpass", sans-serif;
+  font-size: 14px;
+}
+
+.gate-form input::placeholder {
+  color: var(--text-dim);
+}
+
+.gate-form input:focus {
+  outline: none;
+  border-color: var(--gold-dim);
+}
+
+.gate-form .cta {
+  border: none;
+  cursor: pointer;
+  margin-top: 8px;
+  width: 100%;
+}
+
+.form-error {
+  color: #e0897a;
+  font-size: 13px;
+  line-height: 1.5;
+  margin-top: 16px;
+}
+
+.form-error a {
+  color: var(--gold);
+}
+
+.video-section {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 24px 60px;
+  text-align: center;
+}
+
+.access-note {
+  color: var(--gold-dim);
+  font-size: 12.5px;
+  letter-spacing: 0.06em;
+  margin: 0 0 18px;
+}
+
+.video-wrap {
+  position: relative;
+  padding-top: 56.25%;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  background: var(--card);
+}
+
+.video-wrap iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+@media (max-width: 720px) {
+  .teaser-card { width: 100%; max-width: 320px; }
+}
