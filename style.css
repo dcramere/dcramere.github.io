@@ -83,12 +83,20 @@ h1, .link-title, .cta {
 }
 
 .motto {
-  margin: 0 0 26px;
+  margin: 0 0 22px;
   font-size: 12px;
   letter-spacing: 0.18em;
   text-transform: uppercase;
   color: var(--gold);
   font-weight: 600;
+}
+
+.bio {
+  margin: 0 auto 28px;
+  max-width: 460px;
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--text-dim);
 }
 
 .cta-row {
