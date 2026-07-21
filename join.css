@@ -151,6 +151,58 @@ h1, h2, h3, h4, .cta, .kicker, .brand span {
   margin: 0 0 36px;
 }
 
+.webinar-teaser {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 0 24px 50px;
+}
+
+.webinar-banner {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 18px 22px;
+  background: var(--card);
+  border: 1px solid var(--gold-dim);
+  border-radius: 8px;
+  text-decoration: none;
+  transition: transform 0.15s ease, background 0.15s ease;
+}
+
+.webinar-banner:hover {
+  transform: translateY(-1px);
+  background: #17150f;
+}
+
+.wb-kicker {
+  font-family: "Cinzel", serif;
+  color: var(--gold);
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  border: 1px solid var(--gold-dim);
+  border-radius: 999px;
+  padding: 5px 12px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.wb-text {
+  color: var(--text);
+  font-size: 14px;
+  line-height: 1.45;
+  flex: 1;
+}
+
+.wb-arrow {
+  color: var(--gold);
+  font-size: 18px;
+  flex-shrink: 0;
+}
+
+@media (max-width: 560px) {
+  .webinar-banner { flex-wrap: wrap; }
+}
+
 .story {
   max-width: 640px;
   margin: 0 auto;
