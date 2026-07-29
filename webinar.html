@@ -11,6 +11,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Overpass:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="join.css">
 <link rel="stylesheet" href="webinar.css">
+<link rel="stylesheet" href="analytics.css">
 </head>
 <body>
 
@@ -73,7 +74,7 @@
 <section class="final-cta">
   <h3>KLAAR OM DE METHODE TOE TE PASSEN?</h3>
   <p>SLUIT JE AAN BIJ DE DCRAMERE CIRCLE EN GA VAN INZICHT NAAR EXECUTIE</p>
-  <a class="cta" href="join.html">BEKIJK DE DCRAMERE CIRCLE</a>
+  <a class="cta" href="join.html" data-track="click_join_from_webinar">BEKIJK DE DCRAMERE CIRCLE</a>
 </section>
 
 <footer class="join-footer">
@@ -106,6 +107,7 @@
   <p>DCRAMERE. All rights reserved.</p>
 </footer>
 
+<script src="analytics.js"></script>
 <script>
 (function () {
   // TODO: vervang met je eigen Formspree endpoint (formspree.io/f/XXXXXXX)
@@ -130,6 +132,7 @@
     videoSection.hidden = false;
     videoFrame.src = VIDEO_EMBED_SRC;
     startCountdown(expiresAt);
+    window.dcTrack && window.dcTrack("webinar_video_unlocked");
   }
 
   function startCountdown(expiresAt) {
@@ -179,6 +182,7 @@
         if (res.ok) {
           var expiresAt = Date.now() + ACCESS_HOURS * 3600000;
           localStorage.setItem(STORAGE_KEY, String(expiresAt));
+          window.dcTrack && window.dcTrack("webinar_registered");
           unlock(expiresAt);
         } else {
           throw new Error("submit failed");

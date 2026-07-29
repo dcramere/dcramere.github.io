@@ -19,6 +19,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Overpass:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="analytics.css">
 </head>
 <body>
 
@@ -41,7 +42,7 @@
   </section>
 
   <section id="links" class="links">
-    <a class="link-card featured" href="webinar.html">
+    <a class="link-card featured" href="webinar.html" data-track="click_webinar_link">
       <span class="icon" aria-hidden="true">
         <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7Z"/></svg>
       </span>
@@ -52,7 +53,7 @@
       <span class="arrow">→</span>
     </a>
 
-    <a class="link-card featured" href="join.html">
+    <a class="link-card featured" href="join.html" data-track="click_join_link">
       <span class="icon" aria-hidden="true">
         <img src="assets/join/eye.png" alt="">
       </span>
@@ -171,5 +172,6 @@
 <script>
   document.getElementById('year').textContent = new Date().getFullYear();
 </script>
+<script src="analytics.js"></script>
 </body>
 </html>
