@@ -114,6 +114,7 @@
   var FORMSPREE_ENDPOINT = "https://formspree.io/f/mwvgqenk";
   // TODO: vervang met de YouTube embed-URL van de opname, bv. https://www.youtube.com/embed/VIDEO_ID
   var VIDEO_EMBED_SRC = "https://www.youtube.com/embed/WOF3tUogpc8";
+  var WEBINAR_RELAY_ENDPOINT = "https://dcramere-webinar-relay.dcramere.workers.dev/";
   var ACCESS_HOURS = 24;
   var STORAGE_KEY = "dcramere_webinar_access";
 
@@ -183,6 +184,12 @@
           var expiresAt = Date.now() + ACCESS_HOURS * 3600000;
           localStorage.setItem(STORAGE_KEY, String(expiresAt));
           window.dcTrack && window.dcTrack("webinar_registered");
+          var registeredEmail = form.querySelector('[name="email"]').value;
+          fetch(WEBINAR_RELAY_ENDPOINT, {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ email: registeredEmail }),
+          }).catch(function () {});
           unlock(expiresAt);
         } else {
           throw new Error("submit failed");
