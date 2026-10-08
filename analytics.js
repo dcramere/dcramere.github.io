@@ -1,7 +1,12 @@
 (function () {
   var GA_ID = "G-DCE7YZDQTT";
   var CONSENT_KEY = "dcramere_analytics_consent";
-  var isNL = document.documentElement.lang === "nl";
+
+  function copy() {
+    return document.documentElement.lang === "nl"
+      ? { text: "Deze site gebruikt analytics-cookies om te begrijpen hoe bezoekers de pagina gebruiken.", accept: "Accepteren", decline: "Weigeren" }
+      : { text: "This site uses analytics cookies to understand how visitors use the page.", accept: "Accept", decline: "Decline" };
+  }
 
   function loadGA() {
     if (window.__gaLoaded) return;
@@ -26,25 +31,30 @@
   function showBanner() {
     var bar = document.createElement("div");
     bar.className = "cookie-banner";
-    var text = isNL
-      ? "Deze site gebruikt analytics-cookies om te begrijpen hoe bezoekers de pagina gebruiken."
-      : "This site uses analytics cookies to understand how visitors use the page.";
-    var acceptLabel = isNL ? "Accepteren" : "Accept";
-    var declineLabel = isNL ? "Weigeren" : "Decline";
     bar.innerHTML =
-      "<p>" + text + "</p>" +
+      "<p></p>" +
       '<div class="cookie-actions">' +
-      '<button type="button" class="cookie-decline">' + declineLabel + "</button>" +
-      '<button type="button" class="cookie-accept">' + acceptLabel + "</button>" +
+      '<button type="button" class="cookie-decline"></button>' +
+      '<button type="button" class="cookie-accept"></button>' +
       "</div>";
+    function label() {
+      var c = copy();
+      bar.querySelector("p").textContent = c.text;
+      bar.querySelector(".cookie-accept").textContent = c.accept;
+      bar.querySelector(".cookie-decline").textContent = c.decline;
+    }
+    label();
+    document.addEventListener("dc:langchange", label);
     document.body.appendChild(bar);
     bar.querySelector(".cookie-accept").addEventListener("click", function () {
       localStorage.setItem(CONSENT_KEY, "granted");
       loadGA();
+      document.removeEventListener("dc:langchange", label);
       bar.remove();
     });
     bar.querySelector(".cookie-decline").addEventListener("click", function () {
       localStorage.setItem(CONSENT_KEY, "denied");
+      document.removeEventListener("dc:langchange", label);
       bar.remove();
     });
   }

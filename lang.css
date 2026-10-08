@@ -1,0 +1,53 @@
+.lang-switch {
+  display: inline-flex;
+  border: 1px solid var(--border, #262218);
+  border-radius: 999px;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.35);
+}
+
+.lang-switch button {
+  background: none;
+  border: 0;
+  color: var(--text-dim, #a8a8a8);
+  font: 600 12px/1 "Overpass", -apple-system, sans-serif;
+  letter-spacing: 0.08em;
+  padding: 8px 13px;
+  cursor: pointer;
+  transition: color 0.15s ease, background 0.15s ease;
+}
+
+.lang-switch button:hover {
+  color: var(--gold, #f4d03f);
+}
+
+.lang-switch button.active {
+  background: var(--gold, #f4d03f);
+  color: #0a0a0a;
+}
+
+.lang-switch button:focus-visible {
+  outline: 2px solid var(--gold, #f4d03f);
+  outline-offset: -2px;
+}
+
+/* Personal page: pinned to the top-right of the content column */
+.lang-switch.floating {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 2;
+}
+
+/* Join page: switch sits beside the back link in the top bar */
+.topbar {
+  flex-wrap: wrap;
+  row-gap: 10px;
+}
+
+.topbar-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-left: auto;
+}

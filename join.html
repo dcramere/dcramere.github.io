@@ -11,6 +11,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Overpass:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="join.css">
 <link rel="stylesheet" href="analytics.css">
+<link rel="stylesheet" href="lang.css">
 </head>
 <body>
 
@@ -19,119 +20,125 @@
     <img src="assets/join/logo.png" alt="DCRAMERE">
     <span>DCRAMERE</span>
   </a>
-  <a class="back-link" href="index.html">&larr; Terug naar profiel</a>
+  <div class="topbar-right">
+    <div class="lang-switch" role="group" aria-label="Taal / Language">
+      <button type="button" data-lang="nl" aria-pressed="true">NL</button>
+      <button type="button" data-lang="en" aria-pressed="false">EN</button>
+    </div>
+    <a class="back-link" href="index.html" data-i18n="back">&larr; Terug naar profiel</a>
+  </div>
 </header>
 
 <section class="hero">
   <img class="hero-icon" src="assets/join/eye.png" alt="">
   <p class="kicker">SEE. DECIPHER. TRADE.</p>
-  <h1>ZIE WAT ANDEREN NIET ZIEN.<br>ONTCIJFER WAT DE MARKT BEWEEGT.</h1>
-  <h2>TRADE MET DISCIPLINE</h2>
-  <p class="big-idea">De meeste traders falen niet door een gebrek aan indicatoren of strategieën. Ze falen omdat ze de markt proberen te <strong>voorspellen</strong> in plaats van te <strong>lezen</strong> wat hij al laat zien.</p>
-  <p class="lede">DCRAMERE is een bewezen tradingsysteem gebouwd op structuur, precisie en executie.</p>
-  <p class="no-list">Geen hype.<br>Geen shortcuts.<br>Geen gokken.</p>
-  <p class="lede-2">Gewoon een duidelijke edge in de markt.</p>
-  <a class="cta" href="https://buy.stripe.com/aFadR81VB88QcXQ4r63Nm00" target="_blank" rel="noopener" data-track="click_stripe_checkout">DOE MEE MET DE DCRAMERE CIRCLE</a>
-  <p class="cta-sub">Sluit je aan bij een community van gedisciplineerde traders.</p>
+  <h1 data-i18n="h1">ZIE WAT ANDEREN NIET ZIEN.<br>ONTCIJFER WAT DE MARKT BEWEEGT.</h1>
+  <h2 data-i18n="h2">TRADE MET DISCIPLINE</h2>
+  <p class="big-idea" data-i18n="bigIdea">De meeste traders falen niet door een gebrek aan indicatoren of strategieën. Ze falen omdat ze de markt proberen te <strong>voorspellen</strong> in plaats van te <strong>lezen</strong> wat hij al laat zien.</p>
+  <p class="lede" data-i18n="lede">DCRAMERE is een bewezen tradingsysteem gebouwd op structuur, precisie en executie.</p>
+  <p class="no-list" data-i18n="noList">Geen hype.<br>Geen shortcuts.<br>Geen gokken.</p>
+  <p class="lede-2" data-i18n="lede2">Gewoon een duidelijke edge in de markt.</p>
+  <a class="cta" href="https://buy.stripe.com/aFadR81VB88QcXQ4r63Nm00" target="_blank" rel="noopener" data-track="click_stripe_checkout" data-i18n="cta">DOE MEE MET DE DCRAMERE CIRCLE</a>
+  <p class="cta-sub" data-i18n="ctaSub">Sluit je aan bij een community van gedisciplineerde traders.</p>
 </section>
 
 <section class="webinar-teaser">
-  <p class="kicker">GRATIS TRAINING</p>
-  <p class="wt-question">Nog niet klaar om mee te doen? Bekijk eerst de DCRAMERE Methode training.</p>
-  <a class="cta wt-btn" href="webinar.html" data-track="click_webinar_from_join">BEKIJK DE GRATIS TRAINING &rarr;</a>
-  <p class="wt-note">Replay-toegang verloopt 24 uur na aanmelding.</p>
+  <p class="kicker" data-i18n="wtKicker">GRATIS TRAINING</p>
+  <p class="wt-question" data-i18n="wtQ">Nog niet klaar om mee te doen? Bekijk eerst de DCRAMERE Methode training.</p>
+  <a class="cta wt-btn" href="webinar.html" data-track="click_webinar_from_join" data-i18n="wtBtn">BEKIJK DE GRATIS TRAINING &rarr;</a>
+  <p class="wt-note" data-i18n="wtNote">Replay-toegang verloopt 24 uur na aanmelding.</p>
 </section>
 
 <section class="story">
-  <p class="kicker">DE PERSOON ACHTER HET SYSTEEM</p>
-  <h3 class="section-title">WAAROM DCRAMERE BESTAAT</h3>
-  <p class="story-text">Voordat DCRAMERE bestond, waren er twee decennia waarin ik infrastructuur draaiende hield die geen ruimte had om te falen — de Amerikaanse Ambassade Suriname, Peace Corps Suriname, enterprise-systemen en cybersecurity. Geen improvisatie, geen giswerk. Alleen structuur, monitoring en gecontroleerd risico, dag in dag uit.</p>
-  <p class="story-text">Trading bleek hetzelfde probleem in een ander domein. De meeste traders jagen op signalen en voorspellingen. DCRAMERE past dezelfde discipline die missiekritieke netwerken beveiligde toe op het lezen van de markt — zie wat er écht gebeurt, ontcijfer wat de prijs communiceert, trade het met een herhaalbaar proces.</p>
-  <p class="story-quote">"De markt heeft nooit ongelijk. Het enige wat je kunt controleren, is je proces."</p>
+  <p class="kicker" data-i18n="stKicker">DE PERSOON ACHTER HET SYSTEEM</p>
+  <h3 class="section-title" data-i18n="stTitle">WAAROM DCRAMERE BESTAAT</h3>
+  <p class="story-text" data-i18n="st1">Voordat DCRAMERE bestond, waren er twee decennia waarin ik infrastructuur draaiende hield die geen ruimte had om te falen — de Amerikaanse Ambassade Suriname, Peace Corps Suriname, enterprise-systemen en cybersecurity. Geen improvisatie, geen giswerk. Alleen structuur, monitoring en gecontroleerd risico, dag in dag uit.</p>
+  <p class="story-text" data-i18n="st2">Trading bleek hetzelfde probleem in een ander domein. De meeste traders jagen op signalen en voorspellingen. DCRAMERE past dezelfde discipline die missiekritieke netwerken beveiligde toe op het lezen van de markt — zie wat er écht gebeurt, ontcijfer wat de prijs communiceert, trade het met een herhaalbaar proces.</p>
+  <p class="story-quote" data-i18n="stQuote">"De markt heeft nooit ongelijk. Het enige wat je kunt controleren, is je proces."</p>
 </section>
 
 <section class="method">
-  <h3 class="section-title">DE DCRAMERE METHODE</h3>
+  <h3 class="section-title" data-i18n="mTitle">DE DCRAMERE METHODE</h3>
   <div class="method-grid">
     <div class="method-card">
       <img src="assets/join/eye.png" alt="">
       <h4>SEE</h4>
-      <p>Structuur komt vóór signalen. De meeste traders springen direct naar indicatoren — jij leert eerst prijs lezen.</p>
+      <p data-i18n="mSee">Structuur komt vóór signalen. De meeste traders springen direct naar indicatoren — jij leert eerst prijs lezen.</p>
     </div>
     <div class="method-card">
       <img src="assets/join/triangle.png" alt="">
       <h4>DECIPHER</h4>
-      <p>Prijs is communicatie, geen ruis. Ontcijfer wat hij je vertelt in plaats van te voorspellen of te reageren.</p>
+      <p data-i18n="mDec">Prijs is communicatie, geen ruis. Ontcijfer wat hij je vertelt in plaats van te voorspellen of te reageren.</p>
     </div>
     <div class="method-card">
       <img src="assets/join/candles.png" alt="">
       <h4>TRADE</h4>
-      <p>Discipline verslaat wilskracht. Een herhaalbaar proces — geen intensiteit — beschermt kapitaal en laat je edge groeien.</p>
+      <p data-i18n="mTrade">Discipline verslaat wilskracht. Een herhaalbaar proces — geen intensiteit — beschermt kapitaal en laat je edge groeien.</p>
     </div>
   </div>
 </section>
 
 <section class="whatyouget">
-  <h3 class="section-title">WAT JE KRIJGT</h3>
+  <h3 class="section-title" data-i18n="gTitle">WAT JE KRIJGT</h3>
   <div class="get-grid">
-    <div class="get-card"><h4>BEWEZEN SYSTEEM</h4><p>Toegang tot het complete DCRAMERE Trading System.</p></div>
-    <div class="get-card"><h4>EDUCATIE</h4><p>Stap-voor-stap training om je edge aan te scherpen.</p></div>
-    <div class="get-card"><h4>TOOLS &amp; INDICATOREN</h4><p>Eigen indicatoren en tools gebouwd voor duidelijkheid en executie.</p></div>
-    <div class="get-card"><h4>COMMUNITY</h4><p>Sluit je aan bij serieuze traders die zich inzetten voor groei en verantwoordelijkheid.</p></div>
-    <div class="get-card"><h4>MARKTINZICHTEN</h4><p>Regelmatige breakdowns, reviews en educatieve content.</p></div>
-    <div class="get-card"><h4>RISICOBEHEER</h4><p>Leer hoe je kapitaal beschermt en consistent groeit.</p></div>
+    <div class="get-card"><h4 data-i18n="g1h">BEWEZEN SYSTEEM</h4><p data-i18n="g1p">Toegang tot het complete DCRAMERE Trading System.</p></div>
+    <div class="get-card"><h4 data-i18n="g2h">EDUCATIE</h4><p data-i18n="g2p">Stap-voor-stap training om je edge aan te scherpen.</p></div>
+    <div class="get-card"><h4 data-i18n="g3h">TOOLS &amp; INDICATOREN</h4><p data-i18n="g3p">Eigen indicatoren en tools gebouwd voor duidelijkheid en executie.</p></div>
+    <div class="get-card"><h4 data-i18n="g4h">COMMUNITY</h4><p data-i18n="g4p">Sluit je aan bij serieuze traders die zich inzetten voor groei en verantwoordelijkheid.</p></div>
+    <div class="get-card"><h4 data-i18n="g5h">MARKTINZICHTEN</h4><p data-i18n="g5p">Regelmatige breakdowns, reviews en educatieve content.</p></div>
+    <div class="get-card"><h4 data-i18n="g6h">RISICOBEHEER</h4><p data-i18n="g6p">Leer hoe je kapitaal beschermt en consistent groeit.</p></div>
   </div>
 </section>
 
 <section class="results">
-  <h3 class="section-title">ECHTE RESULTATEN</h3>
+  <h3 class="section-title" data-i18n="rTitle">ECHTE RESULTATEN</h3>
   <div class="results-grid">
     <div class="result-stat">
       <span class="stat-num">+127.4%</span>
-      <span class="stat-label">GEMIDDELDE GROEI<br>12 MAANDEN</span>
+      <span class="stat-label" data-i18n="r1">GEMIDDELDE GROEI<br>12 MAANDEN</span>
     </div>
     <div class="result-stat">
       <span class="stat-num">80.7%</span>
-      <span class="stat-label">WIN RATE<br>OVER ALLE SETUPS</span>
+      <span class="stat-label" data-i18n="r2">WIN RATE<br>OVER ALLE SETUPS</span>
     </div>
     <div class="result-stat">
       <span class="stat-num">2.3R</span>
-      <span class="stat-label">GEMIDDELDE R:R<br>RISK TO REWARD</span>
+      <span class="stat-label" data-i18n="r3">GEMIDDELDE R:R<br>RISK TO REWARD</span>
     </div>
   </div>
 </section>
 
 <section class="who">
-  <h3 class="section-title">VOOR WIE IS DIT?</h3>
+  <h3 class="section-title" data-i18n="wTitle">VOOR WIE IS DIT?</h3>
   <div class="who-grid">
     <div class="who-card">
       <img src="assets/join/graduate.png" alt="">
-      <h4>Aspirant-traders die structuur zoeken.</h4>
-      <p>Op zoek naar structuur, duidelijkheid en een bewezen pad om met vertrouwen de markt te navigeren.</p>
+      <h4 data-i18n="w1h">Aspirant-traders die structuur zoeken.</h4>
+      <p data-i18n="w1p">Op zoek naar structuur, duidelijkheid en een bewezen pad om met vertrouwen de markt te navigeren.</p>
     </div>
     <div class="who-card">
       <img src="assets/join/audience.png" alt="">
-      <h4>Ervaren traders die hun executie willen verfijnen.</h4>
-      <p>Willen hun executie verfijnen, risicobeheer verbeteren en prestaties optimaliseren.</p>
+      <h4 data-i18n="w2h">Ervaren traders die hun executie willen verfijnen.</h4>
+      <p data-i18n="w2p">Willen hun executie verfijnen, risicobeheer verbeteren en prestaties optimaliseren.</p>
     </div>
     <div class="who-card">
       <img src="assets/join/shield.png" alt="">
-      <h4>Iedereen die het vak onder de knie wil krijgen.</h4>
-      <p>Toegewijde marktdeelnemers die het vak onder de knie willen krijgen en een herhaalbare edge in de markt willen ontwikkelen.</p>
+      <h4 data-i18n="w3h">Iedereen die het vak onder de knie wil krijgen.</h4>
+      <p data-i18n="w3p">Toegewijde marktdeelnemers die het vak onder de knie willen krijgen en een herhaalbare edge in de markt willen ontwikkelen.</p>
     </div>
   </div>
 </section>
 
 <section class="final-cta">
-  <h3>KLAAR OM JE TRADING NAAR EEN HOGER NIVEAU TE TILLEN?</h3>
-  <p>DOE MEE MET DE DCRAMERE CIRCLE EN GA TRADEN MET DUIDELIJKHEID, VERTROUWEN EN DISCIPLINE</p>
+  <h3 data-i18n="fTitle">KLAAR OM JE TRADING NAAR EEN HOGER NIVEAU TE TILLEN?</h3>
+  <p data-i18n="fSub">DOE MEE MET DE DCRAMERE CIRCLE EN GA TRADEN MET DUIDELIJKHEID, VERTROUWEN EN DISCIPLINE</p>
   <div class="badges">
-    <span>BEWEZEN SYSTEEM</span>
-    <span>ECHTE COMMUNITY</span>
-    <span>ECHTE RESULTATEN</span>
-    <span>ECHTE EDGE</span>
+    <span data-i18n="b1">BEWEZEN SYSTEEM</span>
+    <span data-i18n="b2">ECHTE COMMUNITY</span>
+    <span data-i18n="b3">ECHTE RESULTATEN</span>
+    <span data-i18n="b4">ECHTE EDGE</span>
   </div>
-  <a class="cta" href="https://buy.stripe.com/aFadR81VB88QcXQ4r63Nm00" target="_blank" rel="noopener" data-track="click_stripe_checkout">DOE MEE MET DE DCRAMERE CIRCLE</a>
+  <a class="cta" href="https://buy.stripe.com/aFadR81VB88QcXQ4r63Nm00" target="_blank" rel="noopener" data-track="click_stripe_checkout" data-i18n="cta">DOE MEE MET DE DCRAMERE CIRCLE</a>
 </section>
 
 <footer class="join-footer">
@@ -139,19 +146,19 @@
     <a href="https://www.youtube.com/@dcramere" target="_blank" rel="noopener" aria-label="YouTube">
       <svg viewBox="0 0 24 24"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8ZM9.6 15.5V8.5L15.8 12Z"/></svg>
     </a>
-    <a href="https://www.instagram.com/dcramere_edge" target="_blank" rel="noopener" aria-label="Instagram — Zakelijk">
+    <a href="https://www.instagram.com/dcramere_edge" target="_blank" rel="noopener" aria-label="Instagram — Zakelijk" data-i18n-aria="igBiz">
       <svg viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 2 .2 2.6.5.7.3 1.2.6 1.7 1.1.5.5.9 1 1.1 1.7.2.6.4 1.4.5 2.6.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c-.1 1.2-.3 2-.5 2.6-.3.7-.6 1.2-1.1 1.7-.5.5-1 .9-1.7 1.1-.6.2-1.4.4-2.6.5-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-2-.3-2.6-.5-.7-.3-1.2-.6-1.7-1.1-.5-.5-.9-1-1.1-1.7-.2-.6-.4-1.4-.5-2.6C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.9c.1-1.2.3-2 .5-2.6.3-.7.6-1.2 1.1-1.7.5-.5 1-.9 1.7-1.1.6-.2 1.4-.4 2.6-.5C9.4 2.2 9.8 2.2 12 2.2Zm0 1.8c-3.1 0-3.5 0-4.8.1-1 .1-1.6.2-2 .4-.5.2-.8.4-1.2.8-.4.4-.6.7-.8 1.2-.1.4-.3 1-.4 2-.1 1.3-.1 1.7-.1 4.8s0 3.5.1 4.8c.1 1 .2 1.6.4 2 .2.5.4.8.8 1.2.4.4.7.6 1.2.8.4.1 1 .3 2 .4 1.3.1 1.7.1 4.8.1s3.5 0 4.8-.1c1-.1 1.6-.2 2-.4.5-.2.8-.4 1.2-.8.4-.4.6-.7.8-1.2.1-.4.3-1 .4-2 .1-1.3.1-1.7.1-4.8s0-3.5-.1-4.8c-.1-1-.2-1.6-.4-2-.2-.5-.4-.8-.8-1.2-.4-.4-.7-.6-1.2-.8-.4-.1-1-.3-2-.4-1.3-.1-1.7-.1-4.8-.1Zm0 3.1a4.9 4.9 0 1 1 0 9.8 4.9 4.9 0 0 1 0-9.8Zm0 1.8a3.1 3.1 0 1 0 0 6.2 3.1 3.1 0 0 0 0-6.2Zm5.1-2a1.1 1.1 0 1 1 0 2.2 1.1 1.1 0 0 1 0-2.2Z"/></svg>
     </a>
-    <a href="https://www.instagram.com/dcramere" target="_blank" rel="noopener" aria-label="Instagram — Persoonlijk">
+    <a href="https://www.instagram.com/dcramere" target="_blank" rel="noopener" aria-label="Instagram — Persoonlijk" data-i18n-aria="igPers">
       <svg viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 2 .2 2.6.5.7.3 1.2.6 1.7 1.1.5.5.9 1 1.1 1.7.2.6.4 1.4.5 2.6.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c-.1 1.2-.3 2-.5 2.6-.3.7-.6 1.2-1.1 1.7-.5.5-1 .9-1.7 1.1-.6.2-1.4.4-2.6.5-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-2-.3-2.6-.5-.7-.3-1.2-.6-1.7-1.1-.5-.5-.9-1-1.1-1.7-.2-.6-.4-1.4-.5-2.6C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.9c.1-1.2.3-2 .5-2.6.3-.7.6-1.2 1.1-1.7.5-.5 1-.9 1.7-1.1.6-.2 1.4-.4 2.6-.5C9.4 2.2 9.8 2.2 12 2.2Zm0 1.8c-3.1 0-3.5 0-4.8.1-1 .1-1.6.2-2 .4-.5.2-.8.4-1.2.8-.4.4-.6.7-.8 1.2-.1.4-.3 1-.4 2-.1 1.3-.1 1.7-.1 4.8s0 3.5.1 4.8c.1 1 .2 1.6.4 2 .2.5.4.8.8 1.2.4.4.7.6 1.2.8.4.1 1 .3 2 .4 1.3.1 1.7.1 4.8.1s3.5 0 4.8-.1c1-.1 1.6-.2 2-.4.5-.2.8-.4 1.2-.8.4-.4.6-.7.8-1.2.1-.4.3-1 .4-2 .1-1.3.1-1.7.1-4.8s0-3.5-.1-4.8c-.1-1-.2-1.6-.4-2-.2-.5-.4-.8-.8-1.2-.4-.4-.7-.6-1.2-.8-.4-.1-1-.3-2-.4-1.3-.1-1.7-.1-4.8-.1Zm0 3.1a4.9 4.9 0 1 1 0 9.8 4.9 4.9 0 0 1 0-9.8Zm0 1.8a3.1 3.1 0 1 0 0 6.2 3.1 3.1 0 0 0 0-6.2Zm5.1-2a1.1 1.1 0 1 1 0 2.2 1.1 1.1 0 0 1 0-2.2Z"/></svg>
     </a>
     <a href="https://www.tiktok.com/@dcramere" target="_blank" rel="noopener" aria-label="TikTok">
       <svg viewBox="0 0 24 24"><path d="M16.6 2h-3.3v13.9c0 1.6-1.3 3-3 3a3 3 0 0 1-3-3 3 3 0 0 1 3-3c.3 0 .6 0 .9.1V9.6a6.3 6.3 0 0 0-.9-.1 6.3 6.3 0 0 0-6.3 6.3A6.3 6.3 0 0 0 10.3 22a6.3 6.3 0 0 0 6.3-6.3V8.4a8.2 8.2 0 0 0 4.8 1.5V6.6a4.9 4.9 0 0 1-4.8-4.6Z"/></svg>
     </a>
-    <a href="https://www.facebook.com/dcramere" target="_blank" rel="noopener" aria-label="Facebook — Persoonlijk">
+    <a href="https://www.facebook.com/dcramere" target="_blank" rel="noopener" aria-label="Facebook — Persoonlijk" data-i18n-aria="fbPers">
       <svg viewBox="0 0 24 24"><path d="M22 12a10 10 0 1 0-11.6 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.4h-1.3c-1.2 0-1.6.8-1.6 1.6V12h2.8l-.4 2.9h-2.4v7A10 10 0 0 0 22 12Z"/></svg>
     </a>
-    <a href="https://www.facebook.com/DinoECramerCoachingLLC/" target="_blank" rel="noopener" aria-label="Facebook — Zakelijk">
+    <a href="https://www.facebook.com/DinoECramerCoachingLLC/" target="_blank" rel="noopener" aria-label="Facebook — Zakelijk" data-i18n-aria="fbBiz">
       <svg viewBox="0 0 24 24"><path d="M22 12a10 10 0 1 0-11.6 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.4h-1.3c-1.2 0-1.6.8-1.6 1.6V12h2.8l-.4 2.9h-2.4v7A10 10 0 0 0 22 12Z"/></svg>
     </a>
     <a href="https://www.linkedin.com/in/dcramere" target="_blank" rel="noopener" aria-label="LinkedIn">
@@ -161,9 +168,11 @@
       <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.1 8.1 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1-.2.3-.7.8-.8 1-.2.1-.3.2-.5.1a6.7 6.7 0 0 1-2-1.2 7.4 7.4 0 0 1-1.4-1.7c-.1-.3 0-.4.1-.5l.4-.4.3-.4c.1-.1.1-.3 0-.4-.1-.1-.6-1.5-.8-2-.2-.5-.4-.4-.6-.5h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.1s1 2.5 1.1 2.6c.1.2 2 3 4.8 4.2.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.2-.3-.2-.5-.3Z"/></svg>
     </a>
   </div>
-  <p>DCRAMERE. Alle rechten voorbehouden.</p>
+  <p data-i18n="rights">DCRAMERE. Alle rechten voorbehouden.</p>
 </footer>
 
+<script src="i18n-join.js"></script>
+<script src="i18n.js"></script>
 <script src="analytics.js"></script>
 </body>
 </html>

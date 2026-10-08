@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,24 +20,30 @@
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Overpass:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="analytics.css">
+<link rel="stylesheet" href="lang.css">
 </head>
 <body>
 
 <div class="bg-glow"></div>
 
 <main class="wrap">
+  <div class="lang-switch floating" role="group" aria-label="Taal / Language">
+    <button type="button" data-lang="nl" aria-pressed="true">NL</button>
+    <button type="button" data-lang="en" aria-pressed="false">EN</button>
+  </div>
+
   <section class="hero">
     <img class="avatar" src="assets/profile.jpg" alt="Dino Cramer">
     <h1>Dino Cramer</h1>
     <p class="handle">@dcramere</p>
-    <p class="tagline">Trading clarity for people overwhelmed by the noise.</p>
+    <p class="tagline" data-i18n="tagline">Helderheid in trading voor mensen die overweldigd zijn door de ruis.</p>
     <p class="motto">SEE. &nbsp;DECIPHER. &nbsp;TRADE.</p>
 
-    <p class="bio">Entrepreneur, trader, and systems builder based in Paramaribo, Suriname. Two decades in IT &amp; cybersecurity — including systems administration for the U.S. Embassy Suriname and Peace Corps Suriname — before founding DCRAMERE and Dino E Cramer Coaching LLC, where I build algorithmic trading systems, TradingView indicators, and automation. I don't build projects, I build ecosystems.</p>
+    <p class="bio" data-i18n="bio">Ondernemer, trader en systeembouwer uit Paramaribo, Suriname. Twee decennia in IT &amp; cybersecurity — waaronder systeembeheer voor de Amerikaanse Ambassade Suriname en Peace Corps Suriname — voordat ik DCRAMERE en Dino E Cramer Coaching LLC oprichtte, waar ik algoritmische tradingsystemen, TradingView-indicatoren en automatisering bouw. Ik bouw geen projecten, ik bouw ecosystemen.</p>
 
     <div class="cta-row">
-      <a class="cta primary" href="join.html">Join the DCRAMERE Circle</a>
-      <a class="cta secondary" href="#links">View Links</a>
+      <a class="cta primary" href="join.html" data-i18n="ctaJoin">Doe mee met de DCRAMERE Circle</a>
+      <a class="cta secondary" href="#links" data-i18n="ctaLinks">Bekijk links</a>
     </div>
   </section>
 
@@ -47,8 +53,8 @@
         <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7Z"/></svg>
       </span>
       <span class="link-text">
-        <span class="link-title">Gratis Training (Replay)</span>
-        <span class="link-sub">Slechts 24 uur toegang na aanmelding — bekijk nu</span>
+        <span class="link-title" data-i18n="webinarTitle">Gratis Training (Replay)</span>
+        <span class="link-sub" data-i18n="webinarSub">Slechts 24 uur toegang na aanmelding — bekijk nu</span>
       </span>
       <span class="arrow">→</span>
     </a>
@@ -58,8 +64,8 @@
         <img src="assets/join/eye.png" alt="">
       </span>
       <span class="link-text">
-        <span class="link-title">Join the DCRAMERE Circle</span>
-        <span class="link-sub">Proven trading system, tools &amp; community</span>
+        <span class="link-title" data-i18n="joinTitle">Doe mee met de DCRAMERE Circle</span>
+        <span class="link-sub" data-i18n="joinSub">Bewezen tradingsysteem, tools &amp; community</span>
       </span>
       <span class="arrow">→</span>
     </a>
@@ -70,7 +76,7 @@
       </span>
       <span class="link-text">
         <span class="link-title">DCRAMERE — Daily Motivation App</span>
-        <span class="link-sub">Quotes, journal &amp; goal tracking — on Gumroad</span>
+        <span class="link-sub" data-i18n="appSub">Quotes, journal &amp; doelen bijhouden — via Gumroad</span>
       </span>
       <span class="arrow">→</span>
     </a>
@@ -80,8 +86,8 @@
         <svg viewBox="0 0 24 24"><path d="M6 2h12a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2Zm0 2v16h12V4H6Zm2 3h8v2H8V7Zm0 4h8v2H8v-2Zm0 4h5v2H8v-2Z"/></svg>
       </span>
       <span class="link-text">
-        <span class="link-title">Free Trading Journal</span>
-        <span class="link-sub">Log, review &amp; improve your trades — free</span>
+        <span class="link-title" data-i18n="journalTitle">Gratis Trading Journal</span>
+        <span class="link-sub" data-i18n="journalSub">Log, review &amp; verbeter je trades — gratis</span>
       </span>
       <span class="arrow">→</span>
     </a>
@@ -92,7 +98,7 @@
       </span>
       <span class="link-text">
         <span class="link-title">YouTube</span>
-        <span class="link-sub">Trading systems &amp; strategy breakdowns</span>
+        <span class="link-sub" data-i18n="ytSub">Tradingsystemen &amp; strategie-breakdowns</span>
       </span>
       <span class="arrow">→</span>
     </a>
@@ -102,8 +108,8 @@
         <svg viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 2 .2 2.6.5.7.3 1.2.6 1.7 1.1.5.5.9 1 1.1 1.7.2.6.4 1.4.5 2.6.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c-.1 1.2-.3 2-.5 2.6-.3.7-.6 1.2-1.1 1.7-.5.5-1 .9-1.7 1.1-.6.2-1.4.4-2.6.5-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-2-.3-2.6-.5-.7-.3-1.2-.6-1.7-1.1-.5-.5-.9-1-1.1-1.7-.2-.6-.4-1.4-.5-2.6C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.9c.1-1.2.3-2 .5-2.6.3-.7.6-1.2 1.1-1.7.5-.5 1-.9 1.7-1.1.6-.2 1.4-.4 2.6-.5C9.4 2.2 9.8 2.2 12 2.2Zm0 1.8c-3.1 0-3.5 0-4.8.1-1 .1-1.6.2-2 .4-.5.2-.8.4-1.2.8-.4.4-.6.7-.8 1.2-.1.4-.3 1-.4 2-.1 1.3-.1 1.7-.1 4.8s0 3.5.1 4.8c.1 1 .2 1.6.4 2 .2.5.4.8.8 1.2.4.4.7.6 1.2.8.4.1 1 .3 2 .4 1.3.1 1.7.1 4.8.1s3.5 0 4.8-.1c1-.1 1.6-.2 2-.4.5-.2.8-.4 1.2-.8.4-.4.6-.7.8-1.2.1-.4.3-1 .4-2 .1-1.3.1-1.7.1-4.8s0-3.5-.1-4.8c-.1-1-.2-1.6-.4-2-.2-.5-.4-.8-.8-1.2-.4-.4-.7-.6-1.2-.8-.4-.1-1-.3-2-.4-1.3-.1-1.7-.1-4.8-.1Zm0 3.1a4.9 4.9 0 1 1 0 9.8 4.9 4.9 0 0 1 0-9.8Zm0 1.8a3.1 3.1 0 1 0 0 6.2 3.1 3.1 0 0 0 0-6.2Zm5.1-2a1.1 1.1 0 1 1 0 2.2 1.1 1.1 0 0 1 0-2.2Z"/></svg>
       </span>
       <span class="link-text">
-        <span class="link-title">Instagram — Business</span>
-        <span class="link-sub">@dcramere_edge — daily edge &amp; insights</span>
+        <span class="link-title" data-i18n="igBizTitle">Instagram — Zakelijk</span>
+        <span class="link-sub" data-i18n="igBizSub">@dcramere_edge — dagelijkse edge &amp; inzichten</span>
       </span>
       <span class="arrow">→</span>
     </a>
@@ -113,7 +119,7 @@
         <svg viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 2 .2 2.6.5.7.3 1.2.6 1.7 1.1.5.5.9 1 1.1 1.7.2.6.4 1.4.5 2.6.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c-.1 1.2-.3 2-.5 2.6-.3.7-.6 1.2-1.1 1.7-.5.5-1 .9-1.7 1.1-.6.2-1.4.4-2.6.5-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-2-.3-2.6-.5-.7-.3-1.2-.6-1.7-1.1-.5-.5-.9-1-1.1-1.7-.2-.6-.4-1.4-.5-2.6C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.9c.1-1.2.3-2 .5-2.6.3-.7.6-1.2 1.1-1.7.5-.5 1-.9 1.7-1.1.6-.2 1.4-.4 2.6-.5C9.4 2.2 9.8 2.2 12 2.2Zm0 1.8c-3.1 0-3.5 0-4.8.1-1 .1-1.6.2-2 .4-.5.2-.8.4-1.2.8-.4.4-.6.7-.8 1.2-.1.4-.3 1-.4 2-.1 1.3-.1 1.7-.1 4.8s0 3.5.1 4.8c.1 1 .2 1.6.4 2 .2.5.4.8.8 1.2.4.4.7.6 1.2.8.4.1 1 .3 2 .4 1.3.1 1.7.1 4.8.1s3.5 0 4.8-.1c1-.1 1.6-.2 2-.4.5-.2.8-.4 1.2-.8.4-.4.6-.7.8-1.2.1-.4.3-1 .4-2 .1-1.3.1-1.7.1-4.8s0-3.5-.1-4.8c-.1-1-.2-1.6-.4-2-.2-.5-.4-.8-.8-1.2-.4-.4-.7-.6-1.2-.8-.4-.1-1-.3-2-.4-1.3-.1-1.7-.1-4.8-.1Zm0 3.1a4.9 4.9 0 1 1 0 9.8 4.9 4.9 0 0 1 0-9.8Zm0 1.8a3.1 3.1 0 1 0 0 6.2 3.1 3.1 0 0 0 0-6.2Zm5.1-2a1.1 1.1 0 1 1 0 2.2 1.1 1.1 0 0 1 0-2.2Z"/></svg>
       </span>
       <span class="link-text">
-        <span class="link-title">Instagram — Personal</span>
+        <span class="link-title" data-i18n="igPersTitle">Instagram — Persoonlijk</span>
         <span class="link-sub">@dcramere</span>
       </span>
       <span class="arrow">→</span>
@@ -125,7 +131,7 @@
       </span>
       <span class="link-text">
         <span class="link-title">TikTok</span>
-        <span class="link-sub">@dcramere — quick market takes</span>
+        <span class="link-sub" data-i18n="tiktokSub">@dcramere — snelle marktinzichten</span>
       </span>
       <span class="arrow">→</span>
     </a>
@@ -135,8 +141,8 @@
         <svg viewBox="0 0 24 24"><path d="M22 12a10 10 0 1 0-11.6 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.4h-1.3c-1.2 0-1.6.8-1.6 1.6V12h2.8l-.4 2.9h-2.4v7A10 10 0 0 0 22 12Z"/></svg>
       </span>
       <span class="link-text">
-        <span class="link-title">Facebook — Personal</span>
-        <span class="link-sub">Personal profile</span>
+        <span class="link-title" data-i18n="fbPersTitle">Facebook — Persoonlijk</span>
+        <span class="link-sub" data-i18n="fbPersSub">Persoonlijk profiel</span>
       </span>
       <span class="arrow">→</span>
     </a>
@@ -146,7 +152,7 @@
         <svg viewBox="0 0 24 24"><path d="M22 12a10 10 0 1 0-11.6 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.4h-1.3c-1.2 0-1.6.8-1.6 1.6V12h2.8l-.4 2.9h-2.4v7A10 10 0 0 0 22 12Z"/></svg>
       </span>
       <span class="link-text">
-        <span class="link-title">Facebook — Business</span>
+        <span class="link-title" data-i18n="fbBizTitle">Facebook — Zakelijk</span>
         <span class="link-sub">Dino E Cramer Coaching LLC</span>
       </span>
       <span class="arrow">→</span>
@@ -158,7 +164,7 @@
       </span>
       <span class="link-text">
         <span class="link-title">LinkedIn</span>
-        <span class="link-sub">Professional background</span>
+        <span class="link-sub" data-i18n="liSub">Professionele achtergrond</span>
       </span>
       <span class="arrow">→</span>
     </a>
@@ -169,20 +175,22 @@
       </span>
       <span class="link-text">
         <span class="link-title">WhatsApp</span>
-        <span class="link-sub">Message directly</span>
+        <span class="link-sub" data-i18n="waSub">Stuur direct een bericht</span>
       </span>
       <span class="arrow">→</span>
     </a>
   </section>
 
   <footer class="footer">
-    <p>&copy; <span id="year"></span> Dino Cramer. All rights reserved.</p>
+    <p>&copy; <span id="year"></span> Dino Cramer. <span data-i18n="rights">Alle rechten voorbehouden.</span></p>
   </footer>
 </main>
 
 <script>
   document.getElementById('year').textContent = new Date().getFullYear();
 </script>
+<script src="i18n-index.js"></script>
+<script src="i18n.js"></script>
 <script src="analytics.js"></script>
 </body>
 </html>
